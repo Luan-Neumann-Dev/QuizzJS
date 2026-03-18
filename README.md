@@ -1,52 +1,87 @@
-<h1 align='center'>
- 🧠 Quizz 
-</h1>
+# JS Quiz
+ 
+> An interactive multiple-choice quiz app — questions load dynamically, answers are validated instantly, and a score screen is shown at the end.
+ 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-![image](https://github.com/Luan-Neumann-Dev/QuizzJS/assets/155394874/ae0e0848-4f46-4cc6-9ab6-f66183e5822b)
-![image](https://github.com/Luan-Neumann-Dev/QuizzJS/assets/155394874/7a616e28-96f1-4435-a6d9-e5f42d9b945c)
-![image](https://github.com/Luan-Neumann-Dev/QuizzJS/assets/155394874/021363ef-f3c2-46a2-9207-683c736cc6d4)
+![Project Preview](https://github.com/Luan-Neumann-Dev/QuizzJS/assets/155394874/ae0e0848-4f46-4cc6-9ab6-f66183e5822b)
+![Project Preview](https://github.com/Luan-Neumann-Dev/QuizzJS/assets/155394874/7a616e28-96f1-4435-a6d9-e5f42d9b945c)
+![Project Preview](https://github.com/Luan-Neumann-Dev/QuizzJS/assets/155394874/021363ef-f3c2-46a2-9207-683c736cc6d4)
 
-<h4 align='center'>
-  <a href='https://luan-neumann-dev.github.io/QuizzJS/'>Click here to view the project</a>
-</h4>
+## 🎯 About
+ 
+JS Quiz is a browser-based multiple-choice quiz focused on programming trivia. Questions and answer options are stored as a JavaScript array of objects and rendered dynamically via DOM manipulation — no page reloads, no frameworks. After all questions are answered, a score screen displays the percentage and number of correct answers, with the option to restart.
 
-> This project is a quiz consisting of three programming-related questions. Upon completion, it displays the percentage of correct answers. The quiz features an interactive interface and is fully responsive.
-
-## 💼 Technologies Used
-- JavaScript;
-- HTML;
-- CSS.
-
-## 🏃 How to Run the Project
-
-To run the project locally, follow these instructions:
-
-1. **Clone** this repository on Visual Studio Code
+## ✨ Features
+ 
+- 🧩 **Dynamic Question Rendering** - Questions and answers are built from a data array and injected into the DOM each round
+- ✅ **Instant Answer Feedback** - Correct and wrong answers are highlighted immediately after selection
+- ⏱️ **Auto-advance** - A 1.5s delay after each answer lets the user read the feedback before moving on
+- 📊 **Score Screen** - Final screen shows percentage score and correct answer count, with a restart button
+- 📱 **Responsive** - Layout adapts to mobile screens via media queries
+ 
+## 🛠️ Built With
+ 
+- **HTML5** - Semantic structure with a hidden answer template cloned dynamically per question
+- **CSS3** - Dark theme, card layout, color-coded answer feedback, and responsive media queries
+- **JavaScript** - Data-driven question rendering, DOM cloning, `setTimeout` for timed transitions, and score calculation
+ 
+## 🚀 Getting Started
+ 
+### Prerequisites
+ 
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+ 
+### Installation
+ 
+```bash
+# Clone the repository
+git clone https://github.com/Luan-Neumann-Dev/js-quiz.git
+ 
+# Navigate to project directory
+cd js-quiz
+ 
+# Open in browser
+open index.html
 ```
-git clone https://github.com/Luan-Neumann-Dev/QuizzJS/
+ 
+## 📁 Project Structure
+ 
 ```
-
-2. **Open** the file: `index.html`
-
-## 🤝 Contributions 
-Contributions are welcome! If you have suggestions for improvements or find any issues, please feel free to open an issue or submit a pull request.
-
-<h2> 🙋 Author  </h2>
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/Luan-Neumann-Dev">
-        <img src="https://avatars.githubusercontent.com/u/155394874?s=400&u=9694d36eda852061b89679e4da99e37e8c22c7ab&v=4" width="100px;" alt="Foto do Luan no GitHub"/><br>
-        <sub>
-          <b>Luan Neumann Dev</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
+js-quiz/
+├── index.html          # Quiz markup — question container, score screen, and answer template
+├── css/
+│   └── styles.css      # Dark theme, card layout, answer states, and responsive styles
+└── js/
+    └── scripts.js      # Quiz data, dynamic rendering, answer checking, and score logic
+```
+ 
+## 🎓 What I Learned
+ 
+- Driving UI entirely from a JavaScript data structure (array of question objects)
+- Using `cloneNode(true)` to replicate a hidden HTML template for each answer button
+- Using `data attributes` (via `setAttribute`) to store correct/wrong metadata on DOM elements
+- Controlling flow with `setTimeout` to create timed transitions between questions
+ 
+## 📝 Notes
+ 
+- This is a **frontend-only** educational project
+- Questions are hardcoded in the JavaScript file — easy to extend by adding objects to the `questions` array
+- No external libraries or frameworks used
+ 
+## 📄 License
+ 
+This project is open source and available under the [MIT License](LICENSE).
+ 
+## 👤 Author
+ 
+**Luan Neumann**
+ 
+- LinkedIn: [Luan-Neumann-Dev](https://www.linkedin.com/in/luan-henrique-neumann-dev/)
+- GitHub: [@luan-neumann-dev](https://github.com/Luan-Neumann-Dev)
+ 
 ---
-<a href="https://www.linkedin.com/in/luan-neumann-dev/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-<a href="https://github.com/Luan-Neumann-Dev" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
-<a href="https://instagram.com/luanneumann" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-<a href = "mailto:luan.neumann.dev@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+ 
+⭐ If you found this project helpful, consider giving it a star!
